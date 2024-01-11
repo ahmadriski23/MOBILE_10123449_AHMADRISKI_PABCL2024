@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.widget.TextView
 import java.util.Locale
 import android.content.Intent
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     // deklarasi properti properti yang terdapat di xml
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity() {
             val onsCairan = mililiterToOnsCairan(mililiter)
             resultTextView.text = String.format(Locale.getDefault(), "%.2f mililiter = %.2f ons cairan", mililiter, onsCairan)
         } else {
-            resultTextView.text = "Masukkan jumlah mililiter terlebih dahulu!"
+            // * memunculkan pesan jika ada kesalaham
+            Toast.makeText(this, "Masukkan jumlah mililiter!", Toast.LENGTH_SHORT).show()
         }
     }
     // function untuk mengkonversi mililiter ke ons cairan
