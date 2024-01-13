@@ -76,5 +76,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewResult"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#28F6DF"
+        android:textColor="@android:color/black"
+        android:text="Konversi Gram ke Cup"
+        android:onClick="gramToCupPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kalkulatorPage"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

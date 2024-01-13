@@ -15,13 +15,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        // mendapatkan id dari input mililiter serta result text view
         inputMililiter = findViewById(R.id.editTextMililiter)
         resultTextView = findViewById(R.id.textViewResult)
     }
 
-    // memanggil halaman kedua
+    // memanggil halaman kalkulator
     fun kalkulatorPage(view: View) {
         val intent = Intent(this, KalkulatorActivity::class.java)
+        startActivity(intent)
+    }
+    // memanggil halaman konversi gram ke cup
+    fun gramToCupPage(view: View){
+        val intent = Intent(this, GramToCupActivity::class.java)
         startActivity(intent)
     }
 
