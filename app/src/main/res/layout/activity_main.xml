@@ -24,7 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:hint="Masukkan jumlah mililiter"
+        android:hint="Masukkan jumlah mililiter..."
         android:inputType="numberDecimal"
         android:background="@drawable/rounded_edittext_background"
         android:paddingStart="10dp"
@@ -77,6 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
+        android:id="@+id/gramToCupPage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -84,14 +85,31 @@
         android:layout_marginEnd="20dp"
         android:backgroundTint="#28F6DF"
         android:textColor="@android:color/black"
-        android:text="Konversi Gram ke Cup"
+        android:text="Mari Konversi Gram ke Cup"
         android:onClick="gramToCupPage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/kalkulatorPage"
         app:layout_constraintEnd_toEndOf="parent"
-
-
         />
+
+    <Button
+        android:id="@+id/cupToGramPage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#ABEFA4"
+        android:textColor="@android:color/black"
+        android:text="Saatnya Konversi Cup ke Gram"
+        android:onClick="cupToGramPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gramToCupPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

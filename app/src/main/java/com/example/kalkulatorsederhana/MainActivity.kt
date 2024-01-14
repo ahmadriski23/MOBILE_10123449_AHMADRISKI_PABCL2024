@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun cupToGramPage(view: View){
+        val intent = Intent(this, CupToGramActivity::class.java)
+        startActivity(intent)
+    }
+
     // function convert ketika tombol konversi di click
     fun convertMililiterToOns(view:View){
         // mengkonversi teks  dari editText yang diberi nama input militer ke string
