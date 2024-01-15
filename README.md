@@ -1,27 +1,20 @@
-# Portfolio Web 
-
-A Portfolio Web- Works on Web & Android! 
+# KiCalculator App 
 
 ## Features
-- Full Animated Website 
-- Smooth Scrolling Animation in Navbar
-- URL Launcher
-- Firebase Hosting
-- Responsive Website
-- Simply UI/UX
-- Animated Splash Screen Web
-- Marquee Text Animated
+- Gram to Cup Conversion
+- Cup to Gram Conversion
+- Calculator
+- Milliliters to Ounces Conversion
 
 ## Pictures
 <p align="center">
-  <img width="1000" src="Images Portfolio.png" alt="Youtube Tutorial Image">
+  <img width="1000" src="Images Portfolio.png" alt="">
 </p>
 
 
 ## Tech Used
-**Server**: Firebase, Firebase Hosting
 
-**Client**: Flutter
+**Client**: Kotlin
     
 ## Feedback
 
