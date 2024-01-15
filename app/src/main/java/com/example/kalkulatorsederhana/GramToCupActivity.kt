@@ -28,7 +28,7 @@ class GramToCupActivity : AppCompatActivity() {
                 val gram = gramText.toDouble()
                 val cup = gramToCup(gram)
                 // memasukkan angka dari gram dan cup ke dalam hasil teks
-                textViewResult.text = String.format(Locale.getDefault(), "%.2f gram setara dengan %.2f cup",gram,cup)
+                textViewResult.text = String.format(Locale.getDefault(), "%.2f gram = %.2f cup",gram,cup)
             } else {
                 Toast.makeText(this, "Masukkan jumlah gram terlebih dahulu", Toast.LENGTH_SHORT)
                     .show()

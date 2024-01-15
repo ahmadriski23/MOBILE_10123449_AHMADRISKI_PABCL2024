@@ -22,10 +22,10 @@ class CupToGramActivity : AppCompatActivity() {
     fun convertCupsToGram(view: View){
         // mendapatkan nilai yang dimasukkkan pengguna dalam edit text
         // mengubah edit text cup menjadi string dan mengkonversi string menjadi double
-        val cups = editTextCups.text.toString().toDouble()
+        val cups = editTextCups.text.toString()
         // kondisi jika cup tidak null
-            if(cups != null){
-                val grams = cupToGram(cups)
+            if(cups.isNotEmpty()){
+                val grams = cupToGram(cups.toDouble())
                 textViewResult.text = "$cups cup = $grams gram"
             } else {
                 // user mendapatkan pesan jika ada kesalahan dalam menginput
